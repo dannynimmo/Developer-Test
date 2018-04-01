@@ -11,7 +11,18 @@ repeat([1,2,3]) //[1,2,3,1,2,3,1,2,3]
 ```
 Your solution:
 
-###### if we type in our console your function and repeat([1,2,3]) then the result should be [1,2,3,1,2,3,1,2,3] 
+```javascript
+function repeat(testArray) {
+    const numRepeat = 3;
+
+    let repeatedArray = [];
+    for (let i = 0; i < numRepeat; i++) {
+        repeatedArray = repeatedArray.concat(testArray);
+    }
+
+    return repeatedArray;
+}
+```
 
 ### Task 2:
 Make this work (no vowels, lowercase except the first letter):
