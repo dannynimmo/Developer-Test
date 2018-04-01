@@ -31,7 +31,16 @@ reformat("liMeSHArp DeveLoper TEST") //Lmshrp dvlpr tst
 ```
 Your solution:
 
-###### if we type in our console your function and reformat("liMeSHArp DeveLoper TEST") then the result should be Lmshrp dvlpr tst
+```javascript
+function reformat(testString) {
+    const noVowels = testString.replace(/[aeiou]+/ig, '');
+
+    const firstLetter = noVowels.charAt(0).toUpperCase();
+    const theRest     = noVowels.substr(1).toLowerCase();
+
+    return firstLetter + theRest;
+}
+```
 
 
 ### Task 3 (optional, for bonus points):
